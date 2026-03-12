@@ -3,19 +3,24 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PowerBee — First RCPM Commercial Venture</title>
-<meta name="description" content="PowerBee P.S.A. — the first company commercializing RCPM technology. 80-90% efficiency, 2 kg, 40,000 RPM. Invest in the future of clean portable power.">
+<title>PowerBee — The First Mover in Clean Combustion</title>
+<meta name="description" content="17 years of patented R&D. A breakthrough engine: 80-90% efficiency, 2 kg, zero NOx. Now raising €250K to build the first commercial prototype.">
 <meta name="keywords" content="PowerBee, RCPM, Revora Engine, clean energy, portable generator, investment, deep tech, combustion engine">
 <meta name="author" content="PowerBee P.S.A.">
-<meta property="og:title" content="PowerBee — First RCPM Commercial Venture">
-<meta property="og:description" content="The first company commercializing patented RCPM engine technology. 80-90% efficiency target, 2 kg generator, zero NOx. Investment opportunity.">
+<meta property="og:title" content="PowerBee — The First Mover in Clean Combustion">
+<meta property="og:description" content="17 years of patented R&D. A breakthrough engine: 80-90% efficiency, 2 kg, zero NOx. Now raising €250K to build the first commercial prototype.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://powerbee.tech">
+<meta property="og:image" content="https://powerbee.tech/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:type" content="image/png">
 <meta property="og:site_name" content="PowerBee P.S.A.">
 <meta property="og:locale" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="PowerBee — First RCPM Commercial Venture">
-<meta name="twitter:description" content="Invest in the first company commercializing patented RCPM engine technology. 80-90% efficiency, 2 kg, zero NOx.">
+<meta name="twitter:title" content="PowerBee — The First Mover in Clean Combustion">
+<meta name="twitter:description" content="17 years of patented R&D. A breakthrough engine: 80-90% efficiency, 2 kg, zero NOx. Now raising €250K to build the first commercial prototype.">
+<meta name="twitter:image" content="https://powerbee.tech/og-image.png">
 <link rel="canonical" href="https://powerbee.tech">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -377,6 +382,29 @@ body::after {
 }
 .hero-title em { color: var(--gold); font-style: normal; }
 .hero-title span { color: var(--neon); display: block; }
+.hero-title .hero-keyword {
+  display: block;
+  font-size: clamp(80px, 14vw, 180px);
+  line-height: .85;
+  letter-spacing: 6px;
+  background: linear-gradient(135deg, #00D4FF 0%, #00E87A 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  filter: drop-shadow(0 0 30px rgba(0,212,255,0.3));
+  margin: 8px 0;
+}
+.hero-title .hero-keyword-gold {
+  display: block;
+  font-size: clamp(80px, 14vw, 180px);
+  line-height: .85;
+  letter-spacing: 6px;
+  background: linear-gradient(135deg, #F5A623 0%, #FF6B35 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  filter: drop-shadow(0 0 30px rgba(245,166,35,0.3));
+}
 .hero-sub {
   font-size: 20px; color: var(--muted); max-width: 560px;
   line-height: 1.6; margin-bottom: 40px;
@@ -396,7 +424,9 @@ body::after {
   .hero-section { padding: 100px 24px 60px; min-height: 100vh; }
   .hero-section::after { left: 24px; right: 24px; }
   .hero-bg-ring { display: none; }
-  .hero-title { font-size: clamp(44px, 12vw, 72px); }
+  .hero-title { font-size: clamp(36px, 10vw, 60px); }
+  .hero-title .hero-keyword,
+  .hero-title .hero-keyword-gold { font-size: clamp(56px, 16vw, 120px); letter-spacing: 3px; }
   .hero-sub { font-size: 16px; }
 
   .section-title { font-size: clamp(36px, 10vw, 56px); margin-bottom: 12px; }
@@ -473,13 +503,13 @@ body::after {
   <div>
     <div class="hero-eyebrow" data-i18n="hero.eyebrow">Investment Opportunity · 2026</div>
     <div class="hero-title" data-i18n-html="hero.title">
-      THE FIRST MOVER<br>IN <span>CLEAN</span><br><em>COMBUSTION.</em>
+      THE FIRST MOVER IN<br><span class="hero-keyword">CLEAN</span><span class="hero-keyword-gold">COMBUSTION.</span>
     </div>
     <div class="hero-sub" data-i18n="hero.sub">
       17 years of patented R&D. A breakthrough engine technology — now being commercialized for the first time. PowerBee is where the opportunity begins.
     </div>
     <div class="badge-row">
-      <div class="badge neon" data-i18n="hero.badge1">Patented IP · 4 Countries</div>
+      <div class="badge neon" data-i18n="hero.badge1">Patent Pending</div>
       <div class="badge gold-badge" data-i18n="hero.badge2">80–90% Efficiency Target</div>
       <div class="badge" data-i18n="hero.badge3">First-Mover Advantage</div>
     </div>
@@ -645,7 +675,7 @@ body::after {
     </div>
     <div class="card">
       <div class="card-title" data-i18n="mkt.f2.title">3 Patents, 3 Breakthroughs</div>
-      <div class="card-body" data-i18n="mkt.f2.body"><strong>1st:</strong> Rotating cylinder — eliminates inertia. <strong>2nd:</strong> Coriolis force solution. <strong>3rd:</strong> 12-stroke drive with integrated generator. Granted in PL, DE, KR, IN.</div>
+      <div class="card-body" data-i18n="mkt.f2.body"><strong>1st:</strong> Rotating cylinder — eliminates inertia. <strong>2nd:</strong> Coriolis force solution. <strong>3rd:</strong> 12-stroke drive with integrated generator. Patents pending.</div>
     </div>
     <div class="card">
       <div class="card-title" data-i18n="mkt.f3.title">Miniaturization 1:5245</div>
@@ -665,8 +695,8 @@ body::after {
   </div>
 
   <div class="ask-box">
-    <div class="ask-amount">&#8364;225K</div>
-    <div class="ask-purpose" data-i18n="ask.purpose">Complete the first working commercial prototype and unlock &euro;800K+ in non-dilutive EU funding</div>
+    <div class="ask-amount">&#8364;250K</div>
+    <div class="ask-purpose" data-i18n="ask.purpose">Complete the first working commercial prototype and unlock &euro;1M+ non-dilutive grant funding</div>
     <div class="ask-breakdown">
       <div class="ask-line">
         <div class="ask-bullet"></div>
@@ -678,7 +708,7 @@ body::after {
       </div>
       <div class="ask-line">
         <div class="ask-bullet gold"></div>
-        <span data-i18n="ask.b3"><strong style="color:var(--text)">EU grants unlocked</strong> — Horizon, NCBR, and Polish Intelligent Development funds require a validated prototype</span>
+        <span data-i18n="ask.b3"><strong style="color:var(--text)">Grant funding unlocked</strong> — €1M+ in non-dilutive grants, prototype is the key requirement</span>
       </div>
       <div class="ask-line">
         <div class="ask-bullet gold"></div>
@@ -690,8 +720,8 @@ body::after {
   <div class="cols-2" style="margin-top:36px; max-width:700px;">
     <div style="padding:20px; border:1px solid var(--border); background:rgba(0,212,255,0.02);">
       <div class="stat-label" data-i18n="ask.founders">Founders invested</div>
-      <div style="font-family:'Bebas Neue',sans-serif; font-size:36px; color:#fff; margin-top:6px;">&#8364;100K</div>
-      <div style="font-size:13px; color:var(--muted); margin-top:4px;" data-i18n="ask.own">Own capital, already committed</div>
+      <div style="font-family:'Bebas Neue',sans-serif; font-size:36px; color:#fff; margin-top:6px;">&#8364;500K</div>
+      <div style="font-size:13px; color:var(--muted); margin-top:4px;" data-i18n="ask.own">Own capital over 17 years of R&D</div>
     </div>
     <div style="padding:20px; border:1px solid rgba(245,166,35,0.2); background:rgba(245,166,35,0.02);">
       <div class="stat-label" data-i18n="ask.target">Total seed target</div>
@@ -754,9 +784,9 @@ pl: {
   'nav.cta': 'UMOW SPOTKANIE',
 
   'hero.eyebrow': 'Mozliwosc Inwestycyjna · 2026',
-  'hero.title': 'PIERWSZY GRACZ<br>W <span>CZYSTYM</span><br><em>SPALANIU.</em>',
+  'hero.title': 'PIERWSZY GRACZ W<br><span class="hero-keyword">CZYSTYM</span><span class="hero-keyword-gold">SPALANIU.</span>',
   'hero.sub': '17 lat opatentowanych badan. Przelomowa technologia silnikowa — komercjalizowana po raz pierwszy. PowerBee to poczatek mozliwosci.',
-  'hero.badge1': 'Patenty · 4 Kraje',
+  'hero.badge1': 'Patent Pending',
   'hero.badge2': 'Sprawnosc docelowa 80–90%',
   'hero.badge3': 'Przewaga pierwszego gracza',
 
@@ -802,20 +832,20 @@ pl: {
   'mkt.f1.title': 'Cykl 12-Suwowy',
   'mkt.f1.body': 'Nie 4 suwy — <strong>12</strong>. Separacja azotu eliminuje NOx. Separacja tlenu zapewnia naturalne doladowanie. Opatentowane i zweryfikowane.',
   'mkt.f2.title': '3 Patenty, 3 Przelumy',
-  'mkt.f2.body': '<strong>1.:</strong> Obracajacy sie cylinder — eliminuje bezwladnosc. <strong>2.:</strong> Rozwiazanie sily Coriolisa. <strong>3.:</strong> 12-suwowy naped z generatorem. Przyznane w PL, DE, KR, IN.',
+  'mkt.f2.body': '<strong>1.:</strong> Obracajacy sie cylinder — eliminuje bezwladnosc. <strong>2.:</strong> Rozwiazanie sily Coriolisa. <strong>3.:</strong> 12-suwowy naped z generatorem. Patents pending.',
   'mkt.f3.title': 'Miniaturyzacja 1:5245',
   'mkt.f3.body': 'Komora spalania: <strong>~0,06 kg</strong>. Budowa modulowa: <strong>100 kW ze 100 jednostek, ponizej 20 kg lacznie</strong>. Platforma, nie tylko produkt.',
 
   'ask.label': 'Inwestycja',
   'ask.title': '<span>MOZLIWOSC.</span>',
   'ask.sub': 'Jeden skoncentrowany kamien milowy. Namacalny rezultat. Twoj kapital konczy prototyp i odblokowuje nastepny etap wzrostu.',
-  'ask.purpose': 'Ukonczenie pierwszego komercyjnego prototypu i odblokowanie 800K+ EUR w bezzwrotnym finansowaniu UE',
+  'ask.purpose': 'Ukonczenie pierwszego komercyjnego prototypu i odblokowanie +1M EUR bezzwrotnego finansowania grantowego',
   'ask.b1': '<strong style="color:var(--text)">Ukonczenie prototypu</strong> — finalna inzynieria, materialy, montaz jednostki PowerBee 1 kW',
   'ask.b2': '<strong style="color:var(--text)">Rozszerzenie IP</strong> — portfolio patentowe do 20+ jurysdykcji globalnie',
-  'ask.b3': '<strong style="color:var(--text)">Granty UE odblokowane</strong> — Horizon, NCBR i fundusze Inteligentnego Rozwoju wymagaja zwalidowanego prototypu',
+  'ask.b3': '<strong style="color:var(--text)">Finansowanie grantowe odblokowane</strong> — +1M EUR bezzwrotnych grantow, prototyp jest kluczowym wymogiem',
   'ask.b4': '<strong style="color:var(--text)">Pierwsze umowy licencyjne</strong> — rozmowy z partnerami w toku, prototyp jest kluczem do zamkniecia',
   'ask.founders': 'Zalozyciele zainwestowali',
-  'ask.own': 'Wlasny kapital, juz wlozony',
+  'ask.own': 'Wlasny kapital przez 17 lat R&D',
   'ask.target': 'Calkowity cel seed',
   'ask.seed': 'Runda seed na skalowanie',
 
@@ -837,9 +867,9 @@ es: {
   'nav.cta': 'SOLICITAR REUNION',
 
   'hero.eyebrow': 'Oportunidad de Inversion \u00b7 2026',
-  'hero.title': 'EL PRIMER ACTOR<br>EN <span>COMBUSTION</span><br><em>LIMPIA.</em>',
+  'hero.title': 'EL PRIMER ACTOR EN<br><span class="hero-keyword">COMBUSTION</span><span class="hero-keyword-gold">LIMPIA.</span>',
   'hero.sub': '17 anos de I+D patentada. Una tecnologia de motor revolucionaria — comercializada por primera vez. PowerBee es donde comienza la oportunidad.',
-  'hero.badge1': 'IP Patentada \u00b7 4 Paises',
+  'hero.badge1': 'Patent Pending',
   'hero.badge2': 'Eficiencia objetivo 80\u201390%',
   'hero.badge3': 'Ventaja del primer actor',
 
@@ -878,19 +908,19 @@ es: {
   'mkt.f1.title': 'Ciclo de 12 Tiempos',
   'mkt.f1.body': 'No 4 tiempos — <strong>12</strong>. La separacion de nitrogeno elimina NOx. La separacion de oxigeno proporciona sobrealimentacion natural.',
   'mkt.f2.title': '3 Patentes, 3 Avances',
-  'mkt.f2.body': '<strong>1a:</strong> Cilindro rotativo — elimina inercia. <strong>2a:</strong> Solucion de fuerza Coriolis. <strong>3a:</strong> Motor de 12 tiempos con generador. Concedidas en PL, DE, KR, IN.',
+  'mkt.f2.body': '<strong>1a:</strong> Cilindro rotativo — elimina inercia. <strong>2a:</strong> Solucion de fuerza Coriolis. <strong>3a:</strong> Motor de 12 tiempos con generador. Patents pending.',
   'mkt.f3.title': 'Miniaturizacion 1:5245',
   'mkt.f3.body': 'Camara de combustion: <strong>~0,06 kg</strong>. Diseno modular: <strong>100 kW de 100 unidades, menos de 20 kg</strong>.',
 
   'ask.label': 'Inversion',
   'ask.title': 'LA <span>OPORTUNIDAD.</span>',
   'ask.sub': 'Un hito enfocado. Un entregable tangible. Tu capital completa el prototipo y desbloquea la siguiente etapa.',
-  'ask.purpose': 'Completar el primer prototipo comercial y desbloquear 800K+ EUR en financiacion no dilutiva de la UE',
+  'ask.purpose': 'Completar el primer prototipo comercial y desbloquear +1M EUR en financiacion no dilutiva',
   'ask.b1': '<strong style="color:var(--text)">Completar prototipo</strong> — ingenieria final, materiales, ensamblaje de unidad PowerBee 1 kW',
   'ask.b2': '<strong style="color:var(--text)">Expansion de IP</strong> — portafolio de patentes a 20+ jurisdicciones',
-  'ask.b3': '<strong style="color:var(--text)">Subvenciones UE desbloqueadas</strong> — Horizon, NCBR requieren prototipo validado',
+  'ask.b3': '<strong style="color:var(--text)">Financiacion desbloqueada</strong> — +1M EUR en subvenciones no dilutivas, el prototipo es requisito clave',
   'ask.b4': '<strong style="color:var(--text)">Primeros acuerdos de licencia</strong> — conversaciones en curso, el prototipo es la clave',
-  'ask.founders': 'Fundadores invirtieron', 'ask.own': 'Capital propio, ya comprometido',
+  'ask.founders': 'Fundadores invirtieron', 'ask.own': 'Capital propio durante 17 anos de I+D',
   'ask.target': 'Objetivo total seed', 'ask.seed': 'Ronda seed para escalar',
 
   'cta.label': 'Contacto',
@@ -906,9 +936,9 @@ de: {
   'nav.cta': 'MEETING ANFRAGEN',
 
   'hero.eyebrow': 'Investmentgelegenheit \u00b7 2026',
-  'hero.title': 'DER ERSTE AKTEUR<br>IN <span>SAUBERER</span><br><em>VERBRENNUNG.</em>',
+  'hero.title': 'DER ERSTE AKTEUR IN<br><span class="hero-keyword">SAUBERER</span><span class="hero-keyword-gold">VERBRENNUNG.</span>',
   'hero.sub': '17 Jahre patentierte F&E. Eine bahnbrechende Motortechnologie — erstmals kommerzialisiert. PowerBee ist der Ausgangspunkt der Chance.',
-  'hero.badge1': 'Patentiertes IP \u00b7 4 Laender',
+  'hero.badge1': 'Patent Pending',
   'hero.badge2': 'Zieleffizienz 80\u201390%',
   'hero.badge3': 'First-Mover-Vorteil',
 
@@ -947,19 +977,19 @@ de: {
   'mkt.f1.title': '12-Takt-Zyklus',
   'mkt.f1.body': 'Nicht 4 Takte — <strong>12</strong>. Stickstoffabtrennung eliminiert NOx. Sauerstoffabtrennung bietet natuerliche Aufladung.',
   'mkt.f2.title': '3 Patente, 3 Durchbrueche',
-  'mkt.f2.body': '<strong>1.:</strong> Rotierender Zylinder — eliminiert Traegheit. <strong>2.:</strong> Coriolis-Kraft-Loesung. <strong>3.:</strong> 12-Takt-Antrieb mit Generator. Erteilt in PL, DE, KR, IN.',
+  'mkt.f2.body': '<strong>1.:</strong> Rotierender Zylinder — eliminiert Traegheit. <strong>2.:</strong> Coriolis-Kraft-Loesung. <strong>3.:</strong> 12-Takt-Antrieb mit Generator. Patents pending.',
   'mkt.f3.title': 'Miniaturisierung 1:5245',
   'mkt.f3.body': 'Brennkammer: <strong>~0,06 kg</strong>. Modulares Design: <strong>100 kW aus 100 Einheiten, unter 20 kg gesamt</strong>.',
 
   'ask.label': 'Investment',
   'ask.title': 'DIE <span>GELEGENHEIT.</span>',
   'ask.sub': 'Ein fokussierter Meilenstein. Ein greifbares Ergebnis. Ihr Kapital vollendet den Prototyp und erschliesst die naechste Wachstumsphase.',
-  'ask.purpose': 'Ersten kommerziellen Prototyp fertigstellen und 800K+ EUR an nicht-verwassernder EU-Foerderung erschliessen',
+  'ask.purpose': 'Ersten kommerziellen Prototyp fertigstellen und +1M EUR nicht-verwassernde Foerderung erschliessen',
   'ask.b1': '<strong style="color:var(--text)">Prototyp-Fertigstellung</strong> — finale Technik, Materialien, Montage der 1-kW-PowerBee-Einheit',
   'ask.b2': '<strong style="color:var(--text)">IP-Erweiterung</strong> — Patentportfolio auf 20+ Jurisdiktionen',
-  'ask.b3': '<strong style="color:var(--text)">EU-Foerderung erschlossen</strong> — Horizon, NCBR erfordern validierten Prototyp',
+  'ask.b3': '<strong style="color:var(--text)">Foerderung erschlossen</strong> — +1M EUR nicht-verwassernde Foerdergelder, Prototyp ist Schluesselanforderung',
   'ask.b4': '<strong style="color:var(--text)">Erste Lizenzvertraege</strong> — Partnergespraeche laufen, Prototyp ist der Schluessel',
-  'ask.founders': 'Gruender investierten', 'ask.own': 'Eigenkapital, bereits eingebracht',
+  'ask.founders': 'Gruender investierten', 'ask.own': 'Eigenkapital ueber 17 Jahre F&E',
   'ask.target': 'Gesamt-Seed-Ziel', 'ask.seed': 'Seed-Runde fuer Skalierung',
 
   'cta.label': 'Kontakt',
